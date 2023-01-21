@@ -1,0 +1,5 @@
+favicon>=0.7.0
+mechanize>=0.4.8
+requests>=2.28.2
+setuptools>=66.0.0
+urltitle>=0.3.8
