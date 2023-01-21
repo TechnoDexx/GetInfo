@@ -3,8 +3,6 @@ import mechanize
 from urltitle import URLTitleReader
 import requests.exceptions
 
-icons = []
-geticon = False
 
 
 def get_icon(url):
@@ -36,3 +34,5 @@ def get_title(url):
 def urltitle_get_title(url):
     reader = URLTitleReader(verify_ssl=True)
     return reader.title(url)
+
+
