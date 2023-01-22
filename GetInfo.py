@@ -2,6 +2,8 @@
 import GetInfo as Gi
 import sys
 import subprocess as sp
+# from GetInfo import Icon, Title
+from GetInfo import *
 
 icons = []
 geticon = False
@@ -17,10 +19,10 @@ def main(argv):
         print("Введите URL")
         exit(0)
     else:
-        icons, geticon = Gi.get_icon(argv[1])
+        icons, geticon = Icon.get(argv[1])      # get_icon(argv[1])
         try:
             print("\n Url: {}".format(argv[1]))
-            print("\n Title: {}".format(Gi.get_title(argv[1])))  # get_title(argv[1])))
+            print("\n Title: {}".format(Title.get(argv[1])))  # get_title(argv[1])))
         except IndexError:
             exit(0)
         except UnboundLocalError:
