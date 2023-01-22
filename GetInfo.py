@@ -2,8 +2,8 @@
 import GetInfo as Gi
 import sys
 import subprocess as sp
-from GetInfo import Icon, Title
-
+# from GetInfo import Icon, Title
+from GetInfo import *
 
 icons = []
 geticon = False
