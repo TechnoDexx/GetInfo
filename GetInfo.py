@@ -1,5 +1,4 @@
 #!/usr/bin/python3.10
-import GetInfo as Gi
 import sys
 import subprocess as sp
 # from GetInfo import Icon, Title
@@ -19,7 +18,7 @@ def main(argv):
         print("Введите URL")
         exit(0)
     else:
-        icons, geticon = Icon.get(argv[1])      # get_icon(argv[1])
+        icons, geticon = Icon.get(argv[1])  # get_icon(argv[1])
         try:
             print("\n Url: {}".format(argv[1]))
             print("\n Title: {}".format(Title.get(argv[1])))  # get_title(argv[1])))
