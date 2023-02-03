@@ -1,8 +1,10 @@
 #!/usr/bin/python3.10
-import sys
-import subprocess as sp
+
+
 # from GetInfo import Icon, Title
 from GetInfo import *
+import sys
+import subprocess as sp
 
 icons = []
 geticon = False
